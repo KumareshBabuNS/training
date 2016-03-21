@@ -313,7 +313,7 @@ X-Application-Context: application
 . We want to bind to a MySQL data source when running on Cloud Foundry, so let's create one:
 +
 ----
-$ cf cs p-mysql 100mb-dev springbox-catalog-db
+$ cf cs p-mysql 512mb springbox-catalog-db
 Creating service springbox-catalog-db in org oreilly-class / space instructor as mstine@pivotal.io...
 OK
 ----

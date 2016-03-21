@@ -474,7 +474,7 @@ $ cf target -s &lt;your_username&gt;</pre>
 <p>Change to the <em>Spring Music</em> sample application directory:</p>
 <div class="listingblock">
 <div class="content">
-<pre>$ cd $COURSE_HOME/day_01/session_02/lab_05/spring-music</pre>
+<pre>$ cd $COURSE_HOME/labs/session_02/lab_05/spring-music</pre>
 </div>
 </div>
 </li>
@@ -519,35 +519,64 @@ systemProp.https.proxyPassword=password</pre>
 <div class="content">
 <div class="listingblock">
 <div class="content">
-<pre>Using manifest file /Users/pivotal/mstine/2015/OReilly/CloudNativeArchitectureClass/day_01/session_02/lab_05/spring-music/manifest.yml <b class="conum">(1)</b>
+<pre>Using manifest file /Users/rjain/Documents/github/pivotalservices/dell/CloudFoundryTraining/labs/session_02/lab_05/spring-music/manifest.yml <b class="conum">(1)</b>
 
-Creating app spring-music in org oreilly-class / space instructor as mstine@pivotal.io...
+Updating app spring-music in org pcfdev-org / space pcfdev-space as admin...
 OK <b class="conum">(2)</b>
 
-Creating route spring-music-hippest-shaman.cfapps.io...
+Creating route spring-music-winterweight-expressman.local.pcfdev.io...
 OK <b class="conum">(3)</b>
 
-Binding spring-music-hippest-shaman.cfapps.io to spring-music...
+Binding spring-music-winterweight-expressman.local.pcfdev.io to spring-music...
 OK <b class="conum">(4)</b>
 
-Uploading spring-music... <b class="conum">(5)</b>
-Uploading app files from: /Users/pivotal/mstine/2015/OReilly/CloudNativeArchitectureClass/day_01/session_02/lab_05/spring-music/build/libs/spring-music.war
+Uploading spring-music...
+Uploading app files from: /Users/rjain/Documents/github/pivotalservices/dell/CloudFoundryTraining/labs/session_02/lab_05/spring-music/build/libs/spring-music.war
 Uploading 569.7K, 90 files
 Done uploading
-OK
+OK <b class="conum">(5)</b>
 
-Starting app spring-music in org oreilly-class / space instructor as mstine@pivotal.io... <b class="conum">(6)</b>
------&gt; Downloaded app package (21M)
------&gt; Java Buildpack Version: v2.6.1 |  https://github.com/cloudfoundry/java-buildpack.git#2d92e70
------&gt; Downloading Open Jdk JRE 1.8.0_31 from https://download.run.pivotal.io/openjdk/lucid/x86_64/openjdk-1.8.0_31.tar.gz (1.3s)
-       Expanding Open Jdk JRE to .java-buildpack/open_jdk_jre (1.2s) <b class="conum">(7)</b>
------&gt; Downloading Spring Auto Reconfiguration 1.7.0_RELEASE from https://download.run.pivotal.io/auto-reconfiguration/auto-reconfiguration-1.7.0_RELEASE.jar (0.1s)
------&gt; Downloading Tomcat Instance 8.0.18 from https://download.run.pivotal.io/tomcat/tomcat-8.0.18.tar.gz (0.4s)
-       Expanding Tomcat to .java-buildpack/tomcat (0.1s) <b class="conum">(8)</b>
------&gt; Downloading Tomcat Lifecycle Support 2.4.0_RELEASE from https://download.run.pivotal.io/tomcat-lifecycle-support/tomcat-lifecycle-support-2.4.0_RELEASE.jar (0.0s)
------&gt; Downloading Tomcat Logging Support 2.4.0_RELEASE from https://download.run.pivotal.io/tomcat-logging-support/tomcat-logging-support-2.4.0_RELEASE.jar (0.0s)
------&gt; Downloading Tomcat Access Logging Support 2.4.0_RELEASE from https://download.run.pivotal.io/tomcat-access-logging-support/tomcat-access-logging-support-2.4.0_RELEASE.jar (0.0s)
------&gt; Uploading droplet (66M) <b class="conum">(9)</b>
+Starting app spring-music in org pcfdev-org / space pcfdev-space as admin... <b class="conum">(6)</b>
+Downloading go_buildpack...
+Downloading ruby_buildpack...
+Downloading nodejs_buildpack...
+Downloading php_buildpack...
+Downloading python_buildpack...
+Downloading staticfile_buildpack...
+Downloading java_buildpack...
+Downloading binary_buildpack...
+Downloaded python_buildpack
+Downloaded staticfile_buildpack
+Downloaded go_buildpack
+Downloaded nodejs_buildpack
+Downloaded binary_buildpack
+Downloaded java_buildpack
+Downloaded ruby_buildpack (269.1M)
+Downloaded php_buildpack (327.7M)
+Creating container
+Successfully created container
+Downloading app package...
+Downloaded app package (20.1M)
+Staging...
+-----&gt; Java Buildpack Version: v3.5.1 (offline) | http://github.com/pivotal-cf/pcf-java-buildpack.git#d6c19f8
+-----&gt; Downloading Open Jdk JRE 1.8.0_65 from https://download.run.pivotal.io/openjdk/trusty/x86_64/openjdk-1.8.0_65.tar.gz (found in cache)
+       Expanding Open Jdk JRE to .java-buildpack/open_jdk_jre (1.0s) <b class="conum">(7)</b>
+-----&gt; Downloading Open JDK Like Memory Calculator 2.0.1_RELEASE from https://download.run.pivotal.io/memory-calculator/trusty/x86_64/memory-calculator-2.0.1_RELEASE.tar.gz (found in cache)
+       Memory Settings: -Xss995K -Xms382293K -XX:MetaspaceSize=64M -Xmx382293K -XX:MaxMetaspaceSize=64M
+-----&gt; Downloading Spring Auto Reconfiguration 1.10.0_RELEASE from https://download.run.pivotal.io/auto-reconfiguration/auto-reconfiguration-1.10.0_RELEASE.jar (found in cache)
+-----&gt; Downloading Tomcat Instance 8.0.30 from https://download.run.pivotal.io/tomcat/tomcat-8.0.30.tar.gz (found in cache) <b class="conum">(8)</b>
+       Expanding Tomcat Instance to .java-buildpack/tomcat (0.1s)
+-----&gt; Downloading Tomcat Lifecycle Support 2.4.0_RELEASE from https://download.run.pivotal.io/tomcat-lifecycle-support/tomcat-lifecycle-support-2.4.0_RELEASE.jar (found in cache)
+-----&gt; Downloading Tomcat Logging Support 2.4.0_RELEASE from https://download.run.pivotal.io/tomcat-logging-support/tomcat-logging-support-2.4.0_RELEASE.jar (found in cache)
+-----&gt; Downloading Tomcat Access Logging Support 2.4.0_RELEASE from https://download.run.pivotal.io/tomcat-access-logging-support/tomcat-access-logging-support-2.4.0_RELEASE.jar (found in cache)
+Exit status 0
+Staging complete
+Uploading droplet, build artifacts cache...
+Uploading droplet...
+Uploading build artifacts cache...
+Uploaded build artifacts cache (109B)
+Uploaded droplet (72.4M) <b class="conum">(9)</b>
+Uploading complete
 
 0 of 1 instances running, 1 starting
 1 of 1 instances running
@@ -557,19 +586,21 @@ App started
 
 OK
 
-App spring-music was started using this command `JAVA_HOME=$PWD/.java-buildpack/open_jdk_jre JAVA_OPTS="-Djava.io.tmpdir=$TMPDIR -XX:OnOutOfMemoryError=$PWD/.java-buildpack/open_jdk_jre/bin/killjava.sh -Xmx382293K -Xms382293K -XX:MaxMetaspaceSize=64M -XX:MetaspaceSize=64M -Xss995K -Daccess.logging.enabled=false -Dhttp.port=$PORT" $PWD/.java-buildpack/tomcat/bin/catalina.sh run` <b class="conum">(10)</b>
+App spring-music was started using this command `CALCULATED_MEMORY=$($PWD/.java-buildpack/open_jdk_jre/bin/java-buildpack-memory-calculator-2.0.1_RELEASE -memorySizes=metaspace:64m.. -memoryWeights=heap:75,metaspace:10,native:10,stack:5 -memoryInitials=heap:100%,metaspace:100% -totMemory=$MEMORY_LIMIT) &amp;&amp;  JAVA_HOME=$PWD/.java-buildpack/open_jdk_jre JAVA_OPTS="-Djava.io.tmpdir=$TMPDIR -XX:OnOutOfMemoryError=$PWD/.java-buildpack/open_jdk_jre/bin/killjava.sh $CALCULATED_MEMORY -Daccess.logging.enabled=false -Dhttp.port=$PORT" exec $PWD/.java-buildpack/tomcat/bin/catalina.sh run` <b class="conum">(10)</b>
 
-Showing health and status for app spring-music in org oreilly-class / space instructor as mstine@pivotal.io... <b class="conum">(11)</b>
+Showing health and status for app spring-music in org pcfdev-org / space pcfdev-space as admin... <b class="conum">(11)</b>
 OK
 
 requested state: started
 instances: 1/1
 usage: 512M x 1 instances
-urls: spring-music-hippest-shaman.cfapps.io
-last uploaded: Fri Feb 13 15:43:08 UTC 2015
+urls: spring-music-unbrailed-centiliter.local.pcfdev.io, spring-music-winterweight-expressman.local.pcfdev.io
+last uploaded: Mon Mar 21 00:21:25 UTC 2016
+stack: cflinuxfs2
+buildpack: java-buildpack=v3.5.1-offline-http://github.com/pivotal-cf/pcf-java-buildpack.git#d6c19f8 open-jdk-like-jre=1.8.0_65 open-jdk-like-memory-calculator=2.0.1_RELEASE spring-auto-reconfiguration=1.10.0_RELEASE tomcat-access-logging-support=2.4.0_RELEASE to...
 
-     state     since                    cpu    memory           disk
-#0   running   2015-02-13 09:43:55 AM   0.0%   394.5M of 512M   131.1M of 1G</pre>
+     state     since                    cpu    memory         disk           details
+#0   running   2016-03-21 05:52:14 AM   0.0%   692K of 512M   101.2M of 1G</pre>
 </div>
 </div>
 <div class="colist arabic">
@@ -591,7 +622,7 @@ Here the CLI is creating a route with random word tokens inserted (again, see <c
 Routes can actually be bound to multiple applications to support techniques such as <a href="http://www.mattstine.com/2013/07/10/blue-green-deployments-on-cloudfoundry">blue-green deployments</a>.</p>
 </li>
 <li>
-<p>The CLI finally uploads the application bits to PWS. Notice that it&#8217;s uploading <em>90 files</em>! This is because Cloud Foundry actually explodes a ZIP artifact before uploading it for caching purposes.</p>
+<p>The CLI finally uploads the application bits to PCFDev. Notice that it&#8217;s uploading <em>90 files</em>! This is because Cloud Foundry actually explodes a ZIP artifact before uploading it for caching purposes.</p>
 </li>
 <li>
 <p>Now we begin the staging process. The <a href="https://github.com/cloudfoundry/java-buildpack">Java Buildpack</a> is responsible for assembling the runtime components necessary to run the application.</p>
@@ -638,7 +669,7 @@ It will become important in the next lab!</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2016-03-14 17:32:35 CDT
+Last updated 2016-03-21 06:01:16 IST
 </div>
 </div>
 </body>

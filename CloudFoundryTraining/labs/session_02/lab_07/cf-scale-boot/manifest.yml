@@ -1,6 +1,7 @@
 ---
 applications:
 - name: cf-scale-boot
-  memory: 512M
+  memory: 128M
   instances: 1
-  host: cf-scale-boot-${random-word}
+  host: scale
+  path: .
