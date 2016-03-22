@@ -30,13 +30,32 @@ $ git fetch --all
 
 == Pre-requisites
 
+* Network
+** Switch to `guest` network
+** Open IE, and access https://www.bbc.com
+** You'll be redirected to Dell guest account registration page
+** Request for a one-time guest account for yourself
+** Save the connection details
+** Switch to `dell` network
+** Approve your own request
+** Once approved, switch back to `guest` network
+** Open IE, and access https://www.bbc.com
+** You will be asked to create a new guest account again, but click on `sign in` this time
+** Enter the previously captured information
+** You should now do the labs from `guest` network *only*
+
 * Install the following:
 ** link:http://www.oracle.com/technetwork/java/javase/downloads/index.html[Java SE JDK]
 ** link:https://www.vagrantup.com/downloads.html[Vagrant]
 ** link:https://www.virtualbox.org/wiki/Downloads[VirtualBox]
 ** link:https://github.com/cloudfoundry/cli/releases/tag/v6.16.1[CF CLI]
+** link:https://spring.io/tools/sts/all[STS - Spring Tool Suite]
 
 Go to `<git-folder>/pcfdev` and execute `vagrant up`
+
+*OR*
+
+Go to `https://run.pivotal.io` and Click Signup and complete the registration process
 
 == Course Materials
 

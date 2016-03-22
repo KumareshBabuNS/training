@@ -6,21 +6,18 @@
 +
 Group:: `io.spring.pivotal`
 Artifact:: `hello-spring-boot`
-Name:: `hello-spring-boot`
-Description:: `Hello Spring Boot`
-Package Name:: `io.pivotal.spring.hello`
 Type:: Maven Project
 Packaging:: Jar
 Java Version:: 1.7
 Language:: Java
-Spring Boot Version 1.2.3
+Spring Boot Version 1.3.3
 
 . In the *Project dependencies* section, check the following:
 +
 * Web
 
 . Click the *Generate Project* button. Your browser will download a zip file.
-Unpack that zip file at `$COURSE_HOME/day_01/session_01/lab_01/initial`.
+Unpack that zip file at `$COURSE_HOME/labs/session_01/lab_01/initial`.
 
 . Import the project's `pom.xml` into your editor/IDE of choice.
 
