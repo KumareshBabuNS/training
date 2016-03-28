@@ -510,15 +510,17 @@ If you haven&#8217;t already, login to it by visiting {CF-CONSOLE-URL}.</p>
 <h2 id="_creating_and_binding_to_a_service_instance">Creating and Binding to a Service Instance</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Let&#8217;s begin by creating a MySql instance provided by Pivotal.</p>
+<p>Let&#8217;s begin by creating a MongoDB instance provided by Pivotal.</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>From the CLI, let&#8217;s <em>create</em> a p-mysql service instance:</p>
+<p>From the CLI, let&#8217;s <em>create</em> a mongolab service instance:</p>
 <div class="listingblock">
 <div class="content">
-<pre>$ cf create-service p-mysql 512mb spring-music-db
+<pre>$ cf unbind-service spring-music spring-music-db
+$ cf ds spring-music-db
+$ cf create-service elephantsql turtle spring-music-db
 Creating service instance spring-music-db in org pcfdev-org / space pcfdev-space as admin...
 OK</pre>
 </div>
@@ -767,7 +769,7 @@ OK</pre>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2016-03-21 06:09:40 IST
+Last updated 2016-03-23 11:55:58 IST
 </div>
 </div>
 </body>

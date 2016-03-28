@@ -16,7 +16,7 @@ The overwhelming majority of our time will be spent engaging with the technology
 This can be accomplished as follows:
 
 ----
-$ git clone https://github.com/pivotalservices/dell.git
+$ git clone https://github.com/pivotalservices/training.git
 $ git fetch --all
 ----
 
